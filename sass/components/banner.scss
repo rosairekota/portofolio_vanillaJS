@@ -1,0 +1,77 @@
+.banner{
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("../../images/basic/rosa-bon.png"),#0f1624;
+    background-position-y:bottom;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &__content{
+         max-width: 800px;
+         h1{
+           color: $white-color;
+           font-size: 2rem;
+           font-weight:500;
+
+         }
+         h1 span{
+              font-family: "Poppins-Bold";
+              font-size:2.8rem;
+              font-weight: 400;
+         }
+
+    }
+    .animate-text{
+         position: relative;
+         height: 70px;
+         overflow: hidden;
+         h2{
+    
+              color:#4e9eff !important;
+              color: #b9a2a5;
+              font-size:3rem;
+              font-weight: 700px;
+              line-height :70px;
+              letter-spacing :1px;
+         }
+         h2:nth-child(1){
+          animation:text-move 10s infinite;
+         }  
+
+    }
+    @keyframes text-move{
+         0%{
+              margin-top: 0;
+         }
+         25%{
+              margin-top:-70px;
+         }
+         50%{
+              margin-top:-140px;
+         }
+         75%{
+              margin-top: -70px;
+         }
+         100%{
+              margin-top: -70px;
+         }
+    }
+.social__icons{
+     margin-top :50px;
+     a{
+          color: $white-color;
+          font-size :25px;
+          margin-right: 30px;
+     }
+}
+.banner__animate .bg-svg{
+    width: 30%;
+    color:red;
+}
+
+}

@@ -1,0 +1,13 @@
+{
+  "name": "portofolio_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass":"sass sass/main.scss css/main.css --watch",
+    "start": "live-server index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
