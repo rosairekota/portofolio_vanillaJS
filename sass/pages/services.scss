@@ -1,0 +1,33 @@
+.services {
+    .services__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .title p{
+        font-size:1rem;
+        width: 80%;
+    }
+    .services__content .card .services__icon{
+        color: $link-color-hover;
+        font-size: 8rem;
+        text-align: center;
+        background:$link-color-hover;
+        transition: transform 0.5s ease;
+    }
+    .services__content .card:hover .services__icon{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+    .services__content .card .card__body{
+        text-align: center;
+        h3{ color:$link-color-hover;
+            font-size: 1.2rem;
+            font-weight:700;
+            margin:10px;
+        }
+    }
+}

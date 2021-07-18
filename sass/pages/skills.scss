@@ -6,8 +6,8 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-       color:$white-color;
-       margin-top: 20px;
+        color:$white-color;
+        margin-top: 20px;
         
     }
     .col-left, .col-right{
@@ -34,7 +34,7 @@
             width: 100%;
             height: 15px;
         }
-        .bar .html .line:before{
+        .line:before{
             content:"";
             position:absolute;
             top:0;
@@ -44,12 +44,13 @@
 
         }
       
+      
     }
-    .bar .html::before{
-        background:#e45126;
-        width: 95%;
-        height:15px;
-
-    }
+  
+   
     
+}
+.skills .skills__content .col-right .bar .css:before{
+    width: 95%;
+   
 }

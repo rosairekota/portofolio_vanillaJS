@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins-Regular";
+  font-family: "Poppins-Light", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -56,6 +56,7 @@ header .brand {
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Poppins-Regular";
 }
 header .navbar {
   position: relative;
@@ -65,6 +66,7 @@ header .navbar a {
   font-size: 1rem;
   font-weight: 500;
   margin-left: 30px;
+  font-family: "Poppins-Regular";
 }
 header .navbar a:hover {
   color: #3a6cf4;
@@ -73,6 +75,9 @@ header .navbar a:hover {
 header.sticky {
   background: #3a6cf4;
   padding: 15px 200px;
+}
+header.sticky .navbar a:hover {
+  color: #111;
 }
 
 .banner {
@@ -171,6 +176,7 @@ header.sticky {
   align-items: center;
 }
 .title .section-title {
+  font-family: "Poppins-Regular";
   position: relative;
   font-weight: 800;
   font-size: 2.2em;
@@ -197,6 +203,18 @@ header.sticky {
   width: 15px;
   background-color: #3a6cf4;
   border-radius: 50%;
+}
+
+.card {
+  width: 340px;
+  margin: 10px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .about__content {
@@ -234,6 +252,7 @@ header.sticky {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 20px;
+  font-family: "Poppins-Regular";
 }
 .about__content .col-right .about__description {
   font-size: 1rem;
@@ -275,7 +294,7 @@ header.sticky {
   width: 100%;
   height: 15px;
 }
-.skills .bar .bar .html .line:before {
+.skills .bar .line:before {
   content: "";
   position: absolute;
   top: 0;
@@ -283,10 +302,42 @@ header.sticky {
   height: 100%;
   border-radius: 2px;
 }
-.skills .bar .html::before {
-  background: #e45126;
+
+.skills .skills__content .col-right .bar .css:before {
   width: 95%;
-  height: 15px;
+}
+
+.services .services__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.services .title p {
+  font-size: 1rem;
+  width: 80%;
+}
+.services .services__content .card .services__icon {
+  color: #3a6cf4;
+  font-size: 8rem;
+  text-align: center;
+  background: #3a6cf4;
+  transition: transform 0.5s ease;
+}
+.services .services__content .card:hover .services__icon {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.services .services__content .card .card__body {
+  text-align: center;
+}
+.services .services__content .card .card__body h3 {
+  color: #3a6cf4;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

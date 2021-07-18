@@ -1,7 +1,7 @@
-const headerContainer = document.querySelector("header");
+const headerContainer = document.querySelector("#header");
 
 const handleScroll = (e) => {
-	e.preventDefault();
-	headerContainer.classList.toggle("sticky", window.screenY > 0);
+  e.preventDefault();
+  headerContainer.classList.toggle("sticky", window.scrollY > 0);
 };
 window.addEventListener("scroll", handleScroll);

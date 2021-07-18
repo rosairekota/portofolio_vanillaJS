@@ -10,12 +10,14 @@ header{
     justify-content: space-between;
     align-items: center;
     transition:0.5s ease;
+    
 
     .brand{
          color:$white-color;
          font-size:1.8rem;
          font-weight: 700;
          text-transform: uppercase;
+         font-family: "Poppins-Regular";
     }
     .navbar{
          position: relative;
@@ -25,6 +27,7 @@ header{
          font-size:1rem;
          font-weight:500;
          margin-left: 30px; 
+         font-family: "Poppins-Regular";
          &:hover{
               color: $link-color-hover;
               transition:0.5s ease;
@@ -46,5 +49,8 @@ header{
      &.sticky{
          background:$link-color-hover;
          padding: 15px 200px;
+     }
+     &.sticky .navbar a:hover{
+          color:#111;
      }     
 }
