@@ -40,3 +40,18 @@ const scrollUp = () => {
   document.documentElement.scrollTop = 0;
 };
 scrollBtn.addEventListener("click", scrollUp);
+
+// The Reveal website for elements on scroll
+
+const revealWebSiteElements = () => {
+  let reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealTop = reveals[i].getBoundingClientRect().top;
+    let revealPoint = 50;
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.toggle("active");
+    }
+  }
+};
+window.addEventListener("scroll", revealWebSiteElements);
