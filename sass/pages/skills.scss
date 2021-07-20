@@ -64,3 +64,21 @@
     width: 95%;
    
 }
+
+@media (max-width:594px) and (min-width:60px){
+    .skills .skills__content{
+        display:flex;
+        flex-direction:column;
+    }
+    .skills .column {
+        position: relative;
+        width: 100%;
+    }
+    .skills .col-right {
+        margin-top: 40px;
+    }
+    .skills a {
+        text-decoration: none;
+        margin-top: 20px;
+    }
+}

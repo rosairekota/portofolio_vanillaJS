@@ -1,0 +1,20 @@
+.footer{
+    font-family: "Poppins-Regular";
+    background:$background-primary;
+    text-align: center;
+    padding:2em;
+    color: $white-color;
+    .footer__title{
+        font-size:20px;
+        font-weight:600;
+        margin-top: 10px;
+    }
+    .footer__cpright{
+        font-size:16px;
+        color: #235bf6;
+         a{
+              text-decoration:none;
+              color: $white-color;
+         }
+    }
+}

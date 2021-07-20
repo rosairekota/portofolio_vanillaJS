@@ -11,3 +11,10 @@ $background-secondary:#0f1624;
 $white-color:#fff;
 $link-color-hover:#3a6cf4;
 
+// @media queries
+$medium-screen:1040px;
+
+$small-screen:594px;
+
+$small-media-query:(max-width:594px) and (min-width:60px);
+

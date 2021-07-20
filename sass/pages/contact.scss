@@ -1,4 +1,7 @@
 .contact{
+    a{
+        color:inherit;
+    }
     &__content{
         position: relative;
         width: 100%;
@@ -100,5 +103,12 @@
                 background:#043487;
             }
         }
+    }
+}
+
+
+@media (max-width:594px) and (min-width:60px){
+    .contact .row .contact__form{
+        padding: 35px 40px;
     }
 }

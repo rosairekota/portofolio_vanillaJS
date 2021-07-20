@@ -73,5 +73,21 @@
     width: 30%;
     color:red;
 }
-
+@media (max-width:$medium-screen){
+     h1{
+          font-size: 1rem;
+          font-family: "Poppins-Light";
+     }
+     .banner__content h1 span {
+          font-family: "Poppins-Bold";
+          font-size: 2.1rem;
+          font-weight: 500;
+      }
+     .animate-text h2{
+          font-size: 2.2rem;
+     }
+     .btn{
+          padding:10px;
+     }
+}
 }

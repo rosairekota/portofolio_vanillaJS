@@ -34,6 +34,11 @@ body {
   min-height: 110vh;
 }
 
+@media (max-width: 1040px) {
+  section {
+    padding: 80px 20px;
+  }
+}
 .bg_animation {
   width: 30%;
 }
@@ -44,7 +49,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 15px 200px;
+  padding: 15px 150px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -81,6 +86,90 @@ header.sticky .navbar a:hover {
 }
 header.bevhor {
   transition: all 0.5s;
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 10px 20px;
+  }
+  header.sticky {
+    padding: 10px 20px;
+  }
+  header .navbar {
+    display: none;
+  }
+  header .navbar.active {
+    z-index: 888;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.884);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 5s ease;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
+    transition: 0.5s ease;
+  }
+  header .navbar a {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px;
+    padding: 0 20px;
+  }
+  header .navbar a:hover {
+    color: #033487;
+  }
+  header .navbar__toggle {
+    position: absolute;
+    right: 0;
+    background: url("../../images/basic/menu.svg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  header .navbar__toggle.active {
+    z-index: 999;
+    background: url("../../images/basic/top.png"), no-repeat;
+    height: 40px;
+    width: 40px !important;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    filter: invert(0);
+  }
+}
+.scroll-btn {
+  z-index: 999;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  background: #3a6cf4;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.scroll-btn.active {
+  right: 20px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .banner {
@@ -155,6 +244,23 @@ header.bevhor {
   width: 30%;
   color: red;
 }
+@media (max-width: 1040px) {
+  .banner h1 {
+    font-size: 1rem;
+    font-family: "Poppins-Light";
+  }
+  .banner .banner__content h1 span {
+    font-family: "Poppins-Bold";
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+  .banner .animate-text h2 {
+    font-size: 2.2rem;
+  }
+  .banner .btn {
+    padding: 10px;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -208,6 +314,12 @@ header.bevhor {
   border-radius: 50%;
 }
 
+@media (max-width: 1040px) {
+  .title .section-title {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+  }
+}
 .about__content {
   position: relative;
   display: flex;
@@ -250,6 +362,48 @@ header.bevhor {
   margin-bottom: 20px;
 }
 
+@media (min-width: 594px) and (max-width: 900px) {
+  .about__content .col-right .about__subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Poppins-Regular";
+  }
+
+  .about__content .col-right .about__description {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .about__content {
+    margin-top: 0px;
+  }
+
+  .btn {
+    padding: 10px;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 594px) and (min-width: 60px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__content .colum {
+    width: 100%;
+  }
+
+  .about__content .col-right {
+    margin-top: 40px;
+  }
+
+  .about__content .col-right .about__subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
 .skills {
   background: #0f1624;
 }
@@ -309,6 +463,26 @@ header.bevhor {
   width: 95%;
 }
 
+@media (max-width: 594px) and (min-width: 60px) {
+  .skills .skills__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills .column {
+    position: relative;
+    width: 100%;
+  }
+
+  .skills .col-right {
+    margin-top: 40px;
+  }
+
+  .skills a {
+    text-decoration: none;
+    margin-top: 20px;
+  }
+}
 .services .services__content {
   display: flex;
   flex-direction: row;
@@ -412,6 +586,9 @@ header.bevhor {
   cursor: pointer;
 }
 
+.contact a {
+  color: inherit;
+}
 .contact__content {
   position: relative;
   width: 100%;
@@ -502,6 +679,32 @@ header.bevhor {
 }
 .contact .row .contact__form .form-group input[type=submit]:hover {
   background: #043487;
+}
+
+@media (max-width: 594px) and (min-width: 60px) {
+  .contact .row .contact__form {
+    padding: 35px 40px;
+  }
+}
+.footer {
+  font-family: "Poppins-Regular";
+  background: #0f1624;
+  text-align: center;
+  padding: 2em;
+  color: #fff;
+}
+.footer .footer__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.footer .footer__cpright {
+  font-size: 16px;
+  color: #235bf6;
+}
+.footer .footer__cpright a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@ header{
     left:0;
     top:0;
     width:100%;
-    padding: 15px 200px;
+    padding: 15px 150px;
     background:transparent;
     display: flex;
     justify-content: space-between;
@@ -44,4 +44,91 @@ header{
      &.bevhor{
           transition:all 0.5s;
      }  
+}
+@media (max-width:$medium-screen){
+     header{
+          padding: 10px 20px;
+          &.sticky{
+               padding: 10px 20px;
+          } 
+          & .navbar{
+               display: none;
+               
+          }
+          .navbar.active{
+               z-index: 888;
+               position:fixed;
+               top: 0;
+               right: 0;
+               background:rgba(0, 0, 0, 0.884);
+               display: flex;
+               flex-direction: column;
+               align-self:center;
+               justify-content:center;
+               width: 100%;
+               height: 100%;
+               transition: 5s ease;
+               text-align: center;
+               box-shadow: 0 5px 25px rgb(255 255 255/15%);
+               transition: 0.5s ease;
+
+          }
+          .navbar a{
+               font-size: 1.2em;
+               font-weight: 500;
+               margin: 10px;
+               padding: 0 20px;
+          }
+          .navbar a:hover{
+               color:#033487;
+          }
+          .navbar__toggle{
+               position: absolute;
+               right:0;
+               background:url("../../images/basic/menu.svg"),no-repeat;
+               background-size: cover;
+               background-position:center;
+               height: 40px;
+               width: 40px;
+               margin:0 20px;
+               cursor: pointer;
+               transition: 0.3s ease;
+          }
+          .navbar__toggle.active{
+           z-index: 999;
+           background:url("../../images/basic/top.png"),no-repeat;
+           height: 40px;
+           width: 40px !important;
+           margin:0 20px;
+           cursor: pointer;
+           transition: 0.3s ease;
+           filter: invert(0);
+          }
+     }
+     
+}
+.scroll-btn{
+     z-index: 999;
+     position: fixed;
+     bottom: 10px;
+     right: 0;
+     background:$link-color-hover;
+     color:$white-color;
+     width: 45px;
+     height: 45px;
+     cursor: pointer;
+     font-size :22px;
+     text-align: center;
+     line-height: 45px;
+     border-radius:5px;
+     pointer-events: none;
+     opacity: 0;
+     transition: all 0.5s ease;
+
+
+}
+.scroll-btn.active{
+     right: 20px;
+     pointer-events: auto;
+     opacity: 1;
 }

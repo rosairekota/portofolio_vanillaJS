@@ -16,3 +16,8 @@ section {
 body{
     min-height: 110vh;
 }
+@media (max-width:$medium-screen){
+    section {
+        padding: 80px 20px;
+    }
+}

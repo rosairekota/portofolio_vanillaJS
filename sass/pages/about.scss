@@ -54,4 +54,44 @@
 
 
     }
+    
+}
+@media (min-width: $small-screen) and (max-width:900px){
+    .about__content .col-right .about__subtitle {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: "Poppins-Regular";
+    }
+    .about__content .col-right .about__description {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .about__content {
+        margin-top: 0px;
+    }
+    .btn {   
+        padding: 10px; 
+        letter-spacing: 0px;
+      
+    }
+
+}
+@media (max-width:594px) and (min-width:60px){
+    .about__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about__content .colum{
+        width: 100%;
+    }
+    .about__content .col-right{
+        margin-top :40px;
+    }
+    .about__content .col-right .about__subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      
+    }
 }

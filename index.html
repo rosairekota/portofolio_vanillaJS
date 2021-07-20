@@ -11,9 +11,11 @@
 </head>
 
 <body>
+    <div class="scroll-btn" id="scrollBtn"><i class="fab fa-bars"></i></div>
     <header id="header">
         <a href="#" class="brand">rkota</a>
-        <nav class="navbar">
+        <div class="navbar__toggle" id="btnToggle"></div>
+        <nav class="navbar" id="nav">
             <a href="#banner">Accueil</a>
             <a href="#about">A propos</a>
             <a href="#skills">Competences</a>
@@ -387,7 +389,7 @@
 
                         <div class="contact__info">
                             <h3>Address</h3>
-                            <span>Address,city,country</span>
+                            <span><a href="#">66 Banana, Kilimani/Kintambo,<br>Kinshasa,RDC</a></span>
                         </div>
                     </div>
                     <div class="card">
@@ -397,7 +399,7 @@
 
                         <div class="contact__info">
                             <h3>Téléphone</h3>
-                            <span>Address,city,country</span>
+                            <span><a href="tel:+243814646286">+243 81 46 46 286</a></span>
                         </div>
                     </div>
                     <div class="card">
@@ -407,19 +409,10 @@
 
                         <div class="contact__info">
                             <h3>Email</h3>
-                            <span>Address,city,country</span>
+                            <span><a href="mailto:rosairekota@gmail.com">rosairekota@gmail.com</a></span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="contact__icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
 
-                        <div class="contact__info">
-                            <h3>Site Web</h3>
-                            <span>Address,city,country</span>
-                        </div>
-                    </div>
                 </address>
                 <div class="row">
                     <div class="contact__form">
@@ -440,6 +433,11 @@
                 </div>
         </section>
     </main>
+    <footer class="footer" id="footer">
+        <span class="footer__title">Rosaire Kota</span>
+        <p class="footer__cpright">Copyright &copy; 2014, <a href="https://kinshasadigital.academy">Kinshasa Digital
+                Academy &middot; All rights reserved</a></p>
+    </footer>
 
     <script src="./js/app.js" charset="utf-8"></script>
 </body>
