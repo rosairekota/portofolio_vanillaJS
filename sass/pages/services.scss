@@ -7,15 +7,25 @@
         align-items: center;
         margin-top: 20px;
     }
+    .card{
+        width: 340px;
+        margin: 10px;
+        padding: 25px;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1 1 1/15%);
+        border-radius: 10px;
+        overflow: hidden;
+    }
     .title p{
         font-size:1rem;
         width: 80%;
     }
     .services__content .card .services__icon{
         color: $link-color-hover;
-        font-size: 8rem;
+        font-size: 6rem;
         text-align: center;
-        background:$link-color-hover;
         transition: transform 0.5s ease;
     }
     .services__content .card:hover .services__icon{
@@ -28,6 +38,7 @@
             font-size: 1.2rem;
             font-weight:700;
             margin:10px;
+            @include appyRegularFont;
         }
     }
 }

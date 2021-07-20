@@ -1,0 +1,104 @@
+.contact{
+    &__content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+    &__content .row{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card{
+            background:$white-color;
+            width: 240px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow:0 5px 25px rgb(1 1 1/15%);
+            border-radius: 10px;
+            
+        }
+        .card .contact__icon{
+            color:$link-color-hover;
+            font-size :4rem;
+            text-align:center;
+            transition: transform 0.5s ease;
+        }
+        .card:hover .contact__icon{
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+        .card .contact__info{
+            text-align: center;
+            h3{ 
+                font-size :1.2em;
+                font-weight : 700;
+                margin: 10px;
+                @include appyRegularFont;
+            }
+        }
+
+    }
+    address{ 
+        font-style: normal;
+    }
+    .row .contact__form{
+       // width: 100%;
+        max-width: 600px;
+        margin-top: 20px;
+        padding: 20px 40px;
+        box-shadow:0 5px 25px rgba(1 1 1/15%);
+    
+      
+
+        h3{ 
+            color: #111;
+            font-size :1.6em;
+            font-weight : 600;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .form-group{
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+
+        }
+        .form-group input,textarea{
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            font-size:1em;
+            font-weight: 400;
+            border: 1px solid #043487;
+            border-radius: 5px;
+            resize: none;
+        }
+        .form-group input[type="submit"]{
+            display: inline-block;
+            background:#235bf6;
+            cursor: pointer;
+            color: $white-color;
+            font-size :1.3em;
+            text-transform: uppercase;
+          
+            letter-spacing: 1px;
+            width: 100%;
+            border:none;
+            transition: 0.5s ease;
+            &:hover{
+              
+                background:#043487;
+            }
+        }
+    }
+}

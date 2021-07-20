@@ -46,7 +46,17 @@
       
       
     }
-  
+  .col-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+  }
+  .col-left .skills__subtitle{
+    @include appyRegularFont;
+    margin: 20px;
+}
    
     
 }

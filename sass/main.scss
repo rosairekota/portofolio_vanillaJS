@@ -1,6 +1,7 @@
 @import "./base/typography";
 @import "./base/reset";
 @import "./abstract/variables";
+@import "./abstract/mixims.scss";
 @import "./components/animate";
 @import "./components/header";
 @import "./components/banner";
@@ -9,6 +10,8 @@
 @import "./components/card";
 @import "./pages/about";
 @import "./pages/skills";
-@import "./pages/services"
+@import "./pages/services";
+@import "./pages/work";
+@import "./pages/contact.scss"
 
 

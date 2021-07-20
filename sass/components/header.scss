@@ -33,24 +33,15 @@ header{
               transition:0.5s ease;
          }
      }
-     // a::after{
-     //      content:"";
-     //      position: absolute;
-     //      left: 0;
-     //      height:3px;
-     //      background:$link-color-hover;
-     //      bottom:-10px;
-     //      transition:0.5s;
-         
-     // }
-     // a:hover::after{
-     //  width: 100%;
-//     }
+ 
      &.sticky{
-         background:$link-color-hover;
+         background:#033487;
          padding: 15px 200px;
      }
      &.sticky .navbar a:hover{
           color:#111;
-     }     
+     }   
+     &.bevhor{
+          transition:all 0.5s;
+     }  
 }

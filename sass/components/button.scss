@@ -1,7 +1,7 @@
 .btn{
     display: inline-block;
     color:$white-color;
-    background-color:$link-color-hover;
+    background-color:#235bf6;
     font-weight: 600;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -10,6 +10,6 @@
     transition:0.5s ease;
  &:hover{
       
-      background:#235bf6;
+      background:#033487;
  }
 }
