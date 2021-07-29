@@ -206,6 +206,7 @@ header.bevhor {
   padding: 100px 150px;
 }
 .banner__content {
+  z-index: 2;
   max-width: 800px;
 }
 .banner__content h1 {
@@ -284,7 +285,7 @@ header.bevhor {
 .banner::after {
   content: "";
   width: 40%;
-  height: 508px;
+  height: 98%;
   background: #1f2c47de;
   background: #192642a4;
   position: absolute;
@@ -295,8 +296,7 @@ header.bevhor {
 @media (max-width: 1040px) {
   .banner::after {
     content: "";
-    width: 0;
-    height: 0;
+    width: 100%;
   }
 }
 .btn {
