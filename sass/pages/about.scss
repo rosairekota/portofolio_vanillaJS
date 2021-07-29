@@ -9,7 +9,7 @@
 
         .col-left{
             position: relative;
-            width:45%;
+            width:35%;
         }
         .col-left .about__image{
             position: relative;
@@ -25,17 +25,9 @@
                  border-radius: 10px;
             }
         }
-        // @media (min-width: 768px){
-        //     .col-left,.col-right{
-        //         position: relative;
-        //         top: -10px;
-        //          transform: translateY(-100px);
-        //          margin-bottom: 0;
-        //     }
-        // }
         .col-right{
             position: relative;
-            width:50%;
+            width:55%;
             text-align: justify;
 
             .about__subtitle{

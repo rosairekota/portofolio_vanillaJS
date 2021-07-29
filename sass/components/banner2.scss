@@ -5,7 +5,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background: url("../../images/basic/rosa-bon.png"),#192642;
+    background: url("../../images/basic/rosa-bon.png"),#0f1624;
     background-position-y:bottom;
     background-size: contain;
     background-position: right;
@@ -92,15 +92,3 @@
      }
 }
 }
-.banner::after{
-     content: "";
-     width: 40%;
-     height: 508px;
-     background:#1f2c47de;
-     background:#192642a4;
-     position:absolute;
-     top:10px;
-     right: 0px;
-
-}
-

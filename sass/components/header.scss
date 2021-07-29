@@ -16,8 +16,11 @@ header{
          color:$white-color;
          font-size:1.8rem;
          font-weight: 700;
-         text-transform: uppercase;
+         //text-transform: uppercase;
          font-family: "Poppins-Regular";
+         span{
+              color:#4e9eff;
+         }
     }
     .navbar{
          position: relative;
@@ -33,8 +36,9 @@ header{
               transition:0.5s ease;
          }
      }
- 
-     &.sticky{
+     &.stick{
+     background:#0f1624}    
+      &.sticky{
          background:#033487;
          padding: 15px 200px;
      }
@@ -96,11 +100,12 @@ header{
           }
           .navbar__toggle.active{
            z-index: 999;
-           background:url("../../images/basic/top.png"),no-repeat;
+           background:url("../../images/basic/menu.svg"),no-repeat;
+           background-size: cover;
+           background-position:center;
            height: 40px;
-           width: 40px !important;
+           width: 40px;
            margin:0 20px;
-           cursor: pointer;
            transition: 0.3s ease;
            filter: invert(0);
           }

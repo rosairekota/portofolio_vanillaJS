@@ -29,11 +29,12 @@
             font-weight:500;
         }
         .line{
-            padding: relative;
+            position: relative;
             background:$white-color;
             width: 100%;
             height: 15px;
         }
+     
         .line:before{
             content:"";
             position:absolute;
@@ -41,8 +42,34 @@
             left:0;
             height:100%;
             border-radius:2px;
-
         }
+        .html::before{
+            background:#e45126;
+            width: 80%;
+        }
+        .javascript::before{
+            background:#e3a324;
+            width: 75%;
+        }
+        .reactjs::before{
+            background:#249de3;
+            width: 70%;
+        }
+        .typeScript::before{
+            background:#247de3;
+            width: 60%;
+        }
+        .php::before{
+            background:#559dee;
+            width: 75%;
+        }
+        .nodejs::before{
+            background:#1f9e5f;
+            width: 55%;
+        }
+        
+        
+        
       
       
     }
@@ -59,10 +86,6 @@
 }
    
     
-}
-.skills .skills__content .col-right .bar .css:before{
-    width: 95%;
-   
 }
 
 @media (max-width:594px) and (min-width:60px){

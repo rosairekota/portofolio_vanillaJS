@@ -27,7 +27,7 @@ a {
 }
 
 section {
-  padding: 100px 200px;
+  padding: 100px;
 }
 
 body {
@@ -60,8 +60,10 @@ header .brand {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
-  text-transform: uppercase;
   font-family: "Poppins-Regular";
+}
+header .brand span {
+  color: #4e9eff;
 }
 header .navbar {
   position: relative;
@@ -76,6 +78,9 @@ header .navbar a {
 header .navbar a:hover {
   color: #3a6cf4;
   transition: 0.5s ease;
+}
+header.stick {
+  background: #0f1624;
 }
 header.sticky {
   background: #033487;
@@ -138,11 +143,12 @@ header.bevhor {
   }
   header .navbar__toggle.active {
     z-index: 999;
-    background: url("../../images/basic/top.png"), no-repeat;
+    background: url("../../images/basic/menu.svg"), no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 40px;
-    width: 40px !important;
+    width: 40px;
     margin: 0 20px;
-    cursor: pointer;
     transition: 0.3s ease;
     filter: invert(0);
   }
@@ -191,12 +197,13 @@ header.bevhor {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("../../images/basic/rosa-bon.png"), #0f1624;
+  background: url("../../images/basic/rosa-bon.png"), #192642;
   background-position-y: bottom;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 100px 150px;
 }
 .banner__content {
   max-width: 800px;
@@ -274,6 +281,17 @@ header.bevhor {
   }
 }
 
+.banner::after {
+  content: "";
+  width: 40%;
+  height: 508px;
+  background: #1f2c47de;
+  background: #192642a4;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -342,7 +360,7 @@ header.bevhor {
 }
 .about__content .col-left {
   position: relative;
-  width: 45%;
+  width: 35%;
 }
 .about__content .col-left .about__image {
   position: relative;
@@ -360,7 +378,7 @@ header.bevhor {
 }
 .about__content .col-right {
   position: relative;
-  width: 50%;
+  width: 55%;
   text-align: justify;
 }
 .about__content .col-right .about__subtitle {
@@ -446,7 +464,7 @@ header.bevhor {
   font-weight: 500;
 }
 .skills .bar .line {
-  padding: relative;
+  position: relative;
   background: #fff;
   width: 100%;
   height: 15px;
@@ -459,6 +477,30 @@ header.bevhor {
   height: 100%;
   border-radius: 2px;
 }
+.skills .bar .html::before {
+  background: #e45126;
+  width: 80%;
+}
+.skills .bar .javascript::before {
+  background: #e3a324;
+  width: 75%;
+}
+.skills .bar .reactjs::before {
+  background: #249de3;
+  width: 70%;
+}
+.skills .bar .typeScript::before {
+  background: #247de3;
+  width: 60%;
+}
+.skills .bar .php::before {
+  background: #559dee;
+  width: 75%;
+}
+.skills .bar .nodejs::before {
+  background: #1f9e5f;
+  width: 55%;
+}
 .skills .col-left {
   display: flex;
   justify-content: flex-start;
@@ -469,10 +511,6 @@ header.bevhor {
 .skills .col-left .skills__subtitle {
   font-family: "Poppins-Regular";
   margin: 20px;
-}
-
-.skills .skills__content .col-right .bar .css:before {
-  width: 95%;
 }
 
 @media (max-width: 594px) and (min-width: 60px) {
