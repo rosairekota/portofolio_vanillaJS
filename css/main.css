@@ -292,6 +292,13 @@ header.bevhor {
   right: 0px;
 }
 
+@media (max-width: 1040px) {
+  .banner::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+}
 .btn {
   display: inline-block;
   color: #fff;

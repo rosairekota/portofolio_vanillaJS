@@ -103,4 +103,11 @@
      right: 0px;
 
 }
+@media (max-width:$medium-screen){
+     .banner::after{
+          content: "";
+          width: 0;
+          height: 0;
+     }
+}
 
