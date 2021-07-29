@@ -63,7 +63,7 @@ header .brand {
   font-family: "Poppins-Regular";
 }
 header .brand span {
-  color: #4e9eff;
+  color: #3a6cf4;
 }
 header .navbar {
   position: relative;
@@ -80,7 +80,7 @@ header .navbar a:hover {
   transition: 0.5s ease;
 }
 header.stick {
-  background: #0f1624;
+  background: #315aac;
 }
 header.sticky {
   background: #033487;
@@ -224,8 +224,8 @@ header.bevhor {
   overflow: hidden;
 }
 .banner .animate-text h2 {
-  color: #4e9eff !important;
-  color: #b9a2a5;
+  color: #3a6cf4;
+  color: #8e98cf;
   font-size: 3rem;
   font-weight: 700px;
   line-height: 70px;
@@ -295,7 +295,8 @@ header.bevhor {
 .btn {
   display: inline-block;
   color: #fff;
-  background-color: #235bf6;
+  background-color: transparent;
+  border: 1px solid #3a6cf4;
   font-weight: 600;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -304,7 +305,8 @@ header.bevhor {
   transition: 0.5s ease;
 }
 .btn:hover {
-  background: #033487;
+  color: #fff;
+  background-color: #3a6cf4;
 }
 
 .title {
@@ -391,6 +393,22 @@ header.bevhor {
   font-size: 1rem;
   margin-bottom: 20px;
 }
+.about .btn {
+  display: inline-block;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #3a6cf4;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.about .btn:hover {
+  color: #fff;
+  background-color: #3a6cf4;
+}
 
 @media (min-width: 594px) and (max-width: 900px) {
   .about__content .col-right .about__subtitle {
@@ -412,6 +430,22 @@ header.bevhor {
   .btn {
     padding: 10px;
     letter-spacing: 0px;
+  }
+  .btn .btn {
+    display: inline-block;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #3a6cf4;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+  }
+  .btn .btn:hover {
+    color: #fff;
+    background-color: #3a6cf4;
   }
 }
 @media (max-width: 594px) and (min-width: 60px) {
@@ -435,7 +469,7 @@ header.bevhor {
   }
 }
 .skills {
-  background: #0f1624;
+  background: #192642;
 }
 .skills__content {
   position: relative;
@@ -578,7 +612,7 @@ header.bevhor {
 }
 
 .work {
-  background: #0f1624;
+  background: #192642;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -738,7 +772,7 @@ header.bevhor {
 }
 .footer {
   font-family: "Poppins-Regular";
-  background: #0f1624;
+  background: #192642;
   text-align: center;
   padding: 2em;
   color: #fff;

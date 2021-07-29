@@ -46,6 +46,10 @@
 
 
     }
+     
+        @include appyBoutton(#000); 
+      
+    
     
 }
 @media (min-width: $small-screen) and (max-width:900px){
@@ -62,7 +66,8 @@
     .about__content {
         margin-top: 0px;
     }
-    .btn {   
+    .btn {  
+        @include appyBoutton(#000); 
         padding: 10px; 
         letter-spacing: 0px;
       

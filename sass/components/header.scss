@@ -19,7 +19,7 @@ header{
          //text-transform: uppercase;
          font-family: "Poppins-Regular";
          span{
-              color:#4e9eff;
+              color:$link-color-hover;
          }
     }
     .navbar{
@@ -37,7 +37,8 @@ header{
          }
      }
      &.stick{
-     background:#0f1624}    
+     background:#315aac
+     }    
       &.sticky{
          background:#033487;
          padding: 15px 200px;
